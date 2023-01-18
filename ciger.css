@@ -1,0 +1,382 @@
+        /*navigaiton bar*/
+        
+        /**{
+            box-sizing: flex-end;
+            margin: 0;
+            padding: 0;
+        }
+        li, a, button{
+            font-family: cursive;
+            font-weight: 500;
+            font-size: 16px;
+            color: #edf0f1;
+            text-decoration: none;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2px 10%;
+            background-color: #f1f1f1;
+        }
+        .logo{
+            cursor: pointer;
+            order: 3;
+            margin-left: auto;
+            height: 60px;
+        }
+        nav{
+            order: 1;
+        }
+        .nav_links{
+            list-style: none;
+            display: inline-flex;
+        }
+        .nav_links li{
+            display: inline-block;
+            padding: 0px 20px;
+        }
+        .nav_links img{
+            width: 40px;
+        }
+        .nav_links li:nth-child(1){
+            padding: 0 20px 0 0;
+        }
+        .nav_links li a{
+            color: black;
+            transition: all 0.3s ease 0s;
+        }
+        .nav_links li a:hover{
+            color: #0088a9;
+        }
+        .home{
+            text-align: center;
+            width: 100px;
+        }
+        .home:hover{
+             background-color: #D2CBCB;
+        }
+        .abou{
+            text-align: center;
+            width: 100px;
+            height: auto;
+            overflow: wrap;
+        }
+        .abou:hover{
+             background-color: #D2CBCB;
+        }
+        .re{
+            text-align: center;
+            width: 100px;
+        }
+        .re:hover{
+             background-color: #D2CBCB;
+        }
+        .cta{
+            order: 2;
+        }
+        button{
+            margin-left: 20px;
+            padding: 9px 25px;
+            background-color: #E09123;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+        button:hover{
+            background-color: #F1A238;
+        }*/
+
+/*Content*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: lightgray;
+}
+
+/* Header/Blog Title */
+.head {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.head h1 {
+  font-size: 50px;
+}
+
+
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 25%;
+  background-color: lightgray;
+  padding-left: 20px;
+}
+
+
+/*card effect for articles */
+.what {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.ingredient img{
+    height: 100%;
+    width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+/*timeline*/
+
+.timeline {
+    border: 1px ;
+  background-color: #E09123;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* The actual timeline */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+
+.footer{
+    background-color: #24262b;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 70px 0;
+    box-sizing: border-box;
+    width: ;
+}
+.rows{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-column{
+    width: 20%;
+    padding: 0 15px;
+}
+.containn{
+    max-width: 1100px;
+    margin: auto;
+}
+.footer ul{
+    list-style: none;
+}
+.footer h4{
+    margin-left: 40px;
+}
+.social{
+    margin-left: 20px;
+}
+.f{
+    margin-left: 25px;
+}
+.footer-column h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-family: arial;
+    font-weight: 500;
+    position: relative;
+}
+.footer-column h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #E09123;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-column ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-column ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-column ul li a:hover{
+    color: #ffffff;
+    padding-left: 7px;
+}
+.social img{
+    width: 20%;
+}
+.social a img{
+    transition: all 0.3s ease;
+}
+.social a img:hover{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,144 @@
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+ 
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+::-moz-selection { /* Code for Firefox */
+  color: #e09123;
+  background: #e8ede4;
+}
+
+ 
+
+::selection {
+  color: #e09123;
+  background: #e8ede4;
+}
+body{
+    background-color: #e8ede4;
+    /*background-size: 100%;
+    background-repeat: no-repeat;*/
+}
+a{
+    text-decoration: none;
+}
+.nav{
+    display: inline-flex;
+}
+.im{
+	width: 500%;
+}
+.logoimg{
+    width: 180px;
+}
+button{
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    margin-left: 110px;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-flex;
+    background-color: #e09123;
+}
+button:hover{
+    background-color: #b6c7e3;
+    cursor: pointer;
+    color: #0088a9;
+}
+ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #e8ede4;
+            height: 100%;
+
+ 
+
+        }
+
+ 
+
+li a{
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+li a:hover{
+            background-color: #555;
+            color: white;
+        }
+/*.activehome {
+    background-color: #04AA6D;
+    color: white;
+}*/
+.ulnav{
+    height: 118px;
+    z-index: 2;
+}
+
+ 
+
+.bodyp{
+    text-align: center;
+    font-weight: 30px;
+    font-size: 20px;
+    color: #4d4d3f;
+
+}
+.bodyp2{
+    text-align: center;
+    font-weight: 30px;
+    font-size: 20px;
+    color: #4d4d3f;
+}
+.bodyp3{
+    text-align: center;
+    font-weight: 30px;
+    font-size: 20px;
+    color: #4d4d3f;
+}
+.h1texts{
+    text-align: center;
+    color: #30302d;
+}
+.bgimg{
+    background-image: url(Images/bg6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
